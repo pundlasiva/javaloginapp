@@ -60,7 +60,7 @@ pipeline{
 			}
 		}
        stage('SonarQube analysis') {
-//    def scannerHome = tool 'SonarScanner 4.0';
+//    def scannerHome = tool 'SonarScanner 4.7';
         steps{
         withSonarQubeEnv('sonarqube-9.5') { 
         sh "mvn sonar:sonar"
